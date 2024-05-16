@@ -21,4 +21,20 @@ class Helper{
 
         return $slug;
     }
+
+
+
+
+    // per trasformare array in stringa
+    public static function toString($myArray){
+        $string = '';
+        foreach($myArray as $item){
+            if(!$string == ''){
+                $string .= ' , ' . $item;
+            }else{
+                $string = $item;
+            }
+        }
+        return $string;
+    }
 }
