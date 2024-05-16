@@ -41,12 +41,13 @@ class ComicsController extends Controller
             $new_comic->series = $form_data['series'];
             $new_comic->sale_date = $form_data['sale_date'];
             $new_comic->type = $form_data['type'];
-            $new_comic->artists = Helper::toString($new_comic['artists']);
-            $new_comic->writers = Helper::toString($new_comic['writers']);
+            $new_comic->artists = $form_data['artists'];
+            $new_comic->writers = $form_data['writers'];
 
-            $new_comic->save();
+            // dd($new_comic);
+             $new_comic->save();
 
-            return redirect()->route('comics.show', $new_comic);
+             return redirect()->route('comics.show', $new_comic);
     }
 
     /**
