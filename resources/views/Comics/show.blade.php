@@ -26,6 +26,8 @@
         </div>
     </div>
 
+    <a href="{{route('comics.index')}}">Torma all'elenco generale</a>
+
 </div>
 
 @endsection
