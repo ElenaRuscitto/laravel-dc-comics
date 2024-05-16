@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="bg-dark ">
+<div>
     <div class="container ">
         <div class="row">
 
@@ -38,7 +38,11 @@
 
         </div>
 
-
+        <div class="row justify-content-center text-white ">
+            <div class="col-md-6 text-white">
+                {{ $comics->links('pagination::bootstrap-5') }}
+            </div>
+        </div>
 
 
     </div>
