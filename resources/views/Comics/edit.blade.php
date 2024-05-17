@@ -10,7 +10,7 @@
 
     <div class="container">
         <div class="row">
-            <h1 class="my-5"> {{ $comic->title}} </h1>
+            <h1 class="my-5"> Stai modificando: {{ $comic->title}} </h1>
 
 
 
@@ -66,7 +66,7 @@
 
                 <div class="d-flex justify-content-center my-4">
                     <button type="submit" class="btn btn-success mx-3">Salva Comics</button>
-                     <button type="resect" class="btn btn-danger mx-3">Cancella</button>
+                     {{-- <button type="resect" class="btn btn-danger mx-3">Cancella</button> --}}
                 </div>
               </form>
 

@@ -75,7 +75,18 @@ class ComicsController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $form_data = $request->all();
+        // genero nuvo Slug solo se nuovo titolo è diverso dal vecchio
+        if($form_data['title'] === $comic->title) {
+            $form_data['slug'] = $comic->slug;
+        } else {
+            // altrimenti mantengo il vecchio slug
+            $form_data['slug'] = Helper::generateSlug($form_data['title'], new Comic());
+        }
+        // effettuo il fill dei dati e salvo nel DB
+        $comic->update($form_data);
+
+        return redirect()->route('comics.show', $comic);
     }
 
     /**

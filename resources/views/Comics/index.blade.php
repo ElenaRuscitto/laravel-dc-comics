@@ -22,13 +22,13 @@
 
                     <div class="card-body d-flex justify-content-center ">
                       <a href="{{route('comics.show', $comic)}}" class="btn">
-                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-eye text-success"></i>
                      </a>
-                     <a href="#" class="btn">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                     </a>
+                     {{-- <a href="#" class="btn">
+                        <i class="fa-solid fa-cart-shopping text-primary "></i>
+                     </a> --}}
                      <a href="{{route('comics.edit', $comic)}}" class="btn">
-                        <i class="fa-solid fa-pencil"></i>
+                        <i class="fa-solid fa-pencil text-warning"></i>
                      </a>
                     </div>
                   </div>
