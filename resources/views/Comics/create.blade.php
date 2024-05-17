@@ -43,47 +43,47 @@
 
                 <div class="mb-3">
                   <label for="title" class="form-label">Titolo:</label>
-                  <input type="text" class="form-control" id="title" name="title">
+                  <input type="text" class="form-control" id="title" name="title" value=" {{ $title }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="thumb" class="form-label">Immagine:</label>
-                    <input type="text" class="form-control" id="thumb" name="thumb">
+                    <input type="text" class="form-control" id="thumb" name="thumb"  value=" {{ $thumb }}">
                   </div>
 
                 <div class="mb-3">
                   <label for="price" class="form-label">Prezzo:</label>
-                  <input type="text" class="form-control w-25" id="price" name="price">
+                  <input type="text" class="form-control w-25" id="price" name="price"  value=" {{ $price }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="sale_date" class="form-label">Data di pubblicazione:</label>
-                    <input type="text" class="form-control" id="sale_date" name="sale_date">
+                    <input type="text" class="form-control" id="sale_date" name="sale_date"  value=" {{ $sale_date }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="series" class="form-label">Serie:</label>
-                    <input type="text" class="form-control w-25" id="series" name="series">
+                    <input type="text" class="form-control w-25" id="series" name="series" value=" {{ $series }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="type" class="form-label">Tipo:</label>
-                    <input type="text" class="form-control w-25" id="type" name="type">
+                    <input type="text" class="form-control w-25" id="type" name="type" value=" {{ $type }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="artists" class="form-label">Artisti:</label>
-                    <input type="text" class="form-control" id="artists" name="artists">
+                    <input type="text" class="form-control" id="artists" name="artists" value=" {{ $artists }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="writers" class="form-label">Scrittori:</label>
-                    <input type="text" class="form-control" id="writers" name="writers">
+                    <input type="text" class="form-control" id="writers" name="writers" value=" {{ $writers }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="description" class="form-label">Descrizione:</label>
-                    <textarea type="text" class="form-control" id="description" name="description"></textarea>
+                    <textarea type="text" class="form-control" id="description" name="description" value=""> {{ $description }} </textarea>
                 </div>
 
                 <div class="d-flex justify-content-center my-4">
