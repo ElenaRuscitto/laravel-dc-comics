@@ -17,9 +17,29 @@
                 <h5 class="">Tipo: {{$comic->type}}</h5>
                 <p>Prezzo: {{$comic->price}}</p>
                 <p>Data: {{$comic->sale_date}}</p>
-                <p>Artisti: {{$comic->artists}}</p>
-                <p>Scrittori: {{$comic->writers}}</p>
                 <p class="w-75">Descrizione: {{$comic->description}}</p>
+
+                <div class="d-flex justify-content-between ">
+                    <p>Artisti: </p>
+                    @php
+                        $artist_array = explode(',', $comic->artists);
+                        $writer_array = explode(',', $comic->writers);
+                    @endphp
+                    <ul>
+                        @foreach ($artist_array as $item)
+                            <li> {{$item}} </li>
+                        @endforeach
+                    </ul>
+
+                    <p>Scrittori: </p>
+                    <ul>
+                        @foreach ($writer_array as $item)
+                            <li> {{$item}} </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+
 
             </div>
             <div class="col">
