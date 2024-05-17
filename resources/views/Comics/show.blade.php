@@ -14,7 +14,7 @@
             <div class="col">
                 <h3 class="my-5">{{$comic->title}}
                     <a href="{{route('comics.edit', $comic)}}">
-                        <i class="fa-solid fa-pencil text-warning mx-2 "></i></a>
+                        <i class="fa-solid fa-pencil text-warning mx-2 fs-6"></i></a>
 
                         @include('partials.formDelete')
 
