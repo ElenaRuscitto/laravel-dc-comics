@@ -27,6 +27,9 @@
                      <a href="#" class="btn">
                         <i class="fa-solid fa-cart-shopping"></i>
                      </a>
+                     <a href="{{route('comics.edit', $comic)}}" class="btn">
+                        <i class="fa-solid fa-pencil"></i>
+                     </a>
                     </div>
                   </div>
 
