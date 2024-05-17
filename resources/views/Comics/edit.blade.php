@@ -66,7 +66,7 @@
 
                 <div class="d-flex justify-content-center my-4">
                     <button type="submit" class="btn btn-success mx-3">Salva Comics</button>
-                     {{-- <button type="resect" class="btn btn-danger mx-3">Cancella</button> --}}
+
                 </div>
               </form>
 
