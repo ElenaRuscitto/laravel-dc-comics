@@ -27,7 +27,7 @@
                 <div class="mb-3">
                     <label for="thumb" class="form-label">Immagine:</label>
                     <input type="text" class="form-control" id="thumb" name="thumb"  value=" {{ $comic->thumb }}">
-                  </div>
+                </div>
 
                 <div class="mb-3">
                   <label for="price" class="form-label">Prezzo:</label>

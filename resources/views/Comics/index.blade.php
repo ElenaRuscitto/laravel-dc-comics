@@ -9,7 +9,7 @@
            <h1 class="text-center mt-5">Fumetti</h1>
 
             @if (session ('delete'))
-              <div class="alert alert-danger" role="alert">
+              <div class="alert alert-success" role="alert">
                 {{ session('delete') }}
               </div>
             @endif
