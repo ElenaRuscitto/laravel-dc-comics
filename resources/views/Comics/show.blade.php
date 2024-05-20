@@ -12,7 +12,7 @@
     <div class="container text-white  ">
         <div class="row row-cols-2 justify-content-between ">
             <div class="col">
-                <h3 class="my-5">{{$comic->title}}
+                <h3 class="my-5">Dettaglio: {{$comic->title}}
                     <a href="{{route('comics.edit', $comic)}}">
                         <i class="fa-solid fa-pencil text-warning mx-2 fs-6"></i></a>
 
@@ -25,24 +25,28 @@
                 <p>Data: {{$comic->sale_date}}</p>
                 <p class="w-75">Descrizione: {{$comic->description}}</p>
 
-                <div class="d-flex justify-content-between ">
-                    <p>Artisti: </p>
+                <div class="d-flex justify-content-around ">
                     @php
                         $artist_array = explode(',', $comic->artists);
                         $writer_array = explode(',', $comic->writers);
                     @endphp
-                    <ul>
-                        @foreach ($artist_array as $item)
-                            <li> {{$item}} </li>
-                        @endforeach
-                    </ul>
+                    <div class="d-flex">
+                        <p>Artisti: </p>
+                        <ul>
+                            @foreach ($artist_array as $item)
+                                <li> {{$item}} </li>
+                            @endforeach
+                        </ul>
+                    </div>
 
-                    <p>Scrittori: </p>
-                    <ul>
-                        @foreach ($writer_array as $item)
-                            <li> {{$item}} </li>
-                        @endforeach
-                    </ul>
+                    <div class="d-flex">
+                        <p>Scrittori: </p>
+                        <ul>
+                            @foreach ($writer_array as $item)
+                                <li> {{$item}} </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
 
 

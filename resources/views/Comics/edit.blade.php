@@ -12,7 +12,16 @@
         <div class="row">
             <h1 class="my-5"> Stai modificando: {{ $comic->title}} </h1>
 
-
+            {{-- per vedere errore compilazione campi --}}
+            @if ($errors->any())
+            <div class="alert alert-danger " role="alert">
+                <ul>
+                    @foreach ($errors->all() as $error )
+                        <li> {{$error}} </li>
+                    @endforeach
+                </ul>
+            </div>
+            @enderror
 
             <form action="{{route('comics.update', $comic)}}" method="POST" class="my-5">
 
@@ -54,16 +63,13 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="series" class="form-label">Serie: (*)</label>
+                    <label for="series" class="form-label">Serie: </label>
                     <input
                         type="text"
-                        class="form-control w-25 @error('series') is-invalid @enderror"
+                        class="form-control w-25"
                         id="series"
                         name="series"
                         value=" {{ old('series', $comic->series)  }}">
-                    @error('series')
-                        <small class="text-danger">{{ $message }}</small>
-                    @enderror
                 </div>
 
                 <div class="mb-3">

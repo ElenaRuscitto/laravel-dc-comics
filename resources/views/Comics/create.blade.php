@@ -88,11 +88,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="series" class="form-label @error('series') is-invalid @enderror">Serie: (*)</label>
+                    <label for="series" class="form-label">Serie: </label>
                     <input type="text" class="form-control w-25" id="series" name="series" value=" {{old('series')}}">
-                    @error('series')
-                        <small class="text-danger">{{ $message }}</small>
-                    @enderror
+
                 </div>
 
                 <div class="mb-3">

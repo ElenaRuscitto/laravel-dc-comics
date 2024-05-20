@@ -24,7 +24,6 @@ class ComicRequest extends FormRequest
         return [
             'title' => 'required|min:3|max:50',
             'price' => 'required|min:3|max:10',
-            'series' => 'required|min:3|max:50',
             'type' => 'required|min:3|max:20',
         ];
     }
@@ -38,9 +37,6 @@ class ComicRequest extends FormRequest
             'price.required' => 'Il Prezzo è un campo obbligatorio',
             'price.min' => 'Il Prezzo deve avere un minimo di :min caratteri',
             'price.max' => 'Il Prezzo deve avere un massimo di :max caratteri',
-            'series.required' => 'La Serie è un campo obbligatorio',
-            'series.min' => 'La Serie deve avere un minimo di :min caratteri',
-            'series.max' => 'La Serie deve avere un massimo di :max caratteri',
             'type.required' => 'Il Tipo è un campo obbligatorio',
             'type.min' => 'Il Tipo deve avere un minimo di :min caratteri',
             'type.max' => 'Il Tipo deve avere un massimo di :max caratteri',
