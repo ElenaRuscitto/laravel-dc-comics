@@ -20,7 +20,7 @@
                 @method('PUT')
 
                 <div class="mb-3">
-                  <label for="title" class="form-label">Titolo:</label>
+                  <label for="title" class="form-label">Titolo: (*)</label>
                   <input type="text" class="form-control" id="title" name="title" value=" {{ $comic->title }}">
                 </div>
 
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="price" class="form-label">Prezzo:</label>
+                  <label for="price" class="form-label">Prezzo: (*)</label>
                   <input type="text" class="form-control w-25" id="price" name="price"  value=" {{ $comic->price }}">
                 </div>
 
@@ -40,12 +40,11 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="series" class="form-label">Serie:</label>
+                    <label for="series" class="form-label">Serie: (*)</label>
                     <input type="text" class="form-control w-25" id="series" name="series" value=" {{ $comic->series }}">
                 </div>
 
                 <div class="mb-3">
-                    <label for="type" class="form-label">Tipo:</label>
                     <input type="text" class="form-control w-25" id="type" name="type" value=" {{ $comic->type }}">
                 </div>
 

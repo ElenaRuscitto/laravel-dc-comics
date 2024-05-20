@@ -32,16 +32,16 @@ class ComicRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'title.requred' => 'Il Titolo è un campo obbligatorio',
+            'title.required' => 'Il Titolo è un campo obbligatorio',
             'title.min' => 'Il Titolo deve avere un minimo di :min caratteri',
             'title.max' => 'Il Titolo deve avere un massimo di :max caratteri',
-            'price.requred' => 'Il Prezzo è un campo obbligatorio',
+            'price.required' => 'Il Prezzo è un campo obbligatorio',
             'price.min' => 'Il Prezzo deve avere un minimo di :min caratteri',
             'price.max' => 'Il Prezzo deve avere un massimo di :max caratteri',
-            'series.requred' => 'La serie è un campo obbligatorio',
-            'series.min' => 'La serie deve avere un minimo di :min caratteri',
-            'series.max' => 'La serie deve avere un massimo di :max caratteri',
-            'type.requred' => 'Il Tipo è un campo obbligatorio',
+            'series.required' => 'La Serie è un campo obbligatorio',
+            'series.min' => 'La Serie deve avere un minimo di :min caratteri',
+            'series.max' => 'La Serie deve avere un massimo di :max caratteri',
+            'type.required' => 'Il Tipo è un campo obbligatorio',
             'type.min' => 'Il Tipo deve avere un minimo di :min caratteri',
             'type.max' => 'Il Tipo deve avere un massimo di :max caratteri',
         ];
