@@ -10,10 +10,10 @@
 
     <div class="container">
         <div class="row">
-            <h1 class="my-5"> Stai modificando: {{ $comic->title}} </h1>
+            {{-- <h1 class="my-5"> Stai modificando: {{ $comic->title}} </h1> --}}
 
             {{-- per vedere errore compilazione campi --}}
-            @if ($errors->any())
+            {{-- @if ($errors->any())
             <div class="alert alert-danger " role="alert">
                 <ul>
                     @foreach ($errors->all() as $error )
@@ -114,7 +114,7 @@
                     <button type="submit" class="btn btn-success mx-3">Salva Comics</button>
 
                 </div>
-              </form>
+            </form> --}}
 
 
         </div>
