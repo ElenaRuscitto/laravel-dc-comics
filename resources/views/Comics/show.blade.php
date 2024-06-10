@@ -12,7 +12,8 @@
     <div class="container text-white  ">
         <div class="row row-cols-2 justify-content-between ">
             <div class="col">
-                <h3 class="my-5">Dettaglio: {{$comic->title}}
+                <h1 class="text-center my-5">Dettaglio: </h1>
+                <h3 class="my-5">{{$comic->title}}
                     <a href="{{route('comics.edit', $comic)}}">
                         <i class="fa-solid fa-pencil text-warning mx-2 fs-6"></i></a>
 
@@ -53,7 +54,7 @@
 
             </div>
             <div class="col">
-                <img src="{{$comic->thumb}}" class="card-img-top my-5 " alt="{{$comic->title}}">
+                <img src="{{$comic->thumb}}" class="card-img-top my-5 img-fluid" alt="{{$comic->title}}">
             </div>
         </div>
 
