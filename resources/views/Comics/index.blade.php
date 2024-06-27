@@ -3,10 +3,10 @@
 
 @section('content')
 
-<div>
-    <div class="container ">
+<div class="my-container">
+    <div class="container">
         <div class="row">
-           <h1 class="text-center mt-5">Fumetti</h1>
+           <h1 class="text-center my-4">Fumetti</h1>
 
             @if (session ('delete'))
               <div class="alert alert-success" role="alert">
