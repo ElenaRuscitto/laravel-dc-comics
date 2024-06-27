@@ -16,6 +16,7 @@ class ComicsController extends Controller
     {
         // $comics = Comic::all();
         $comics = Comic::paginate(8);
+
         return view('Comics.index', compact('comics'));
     }
 
@@ -106,4 +107,11 @@ class ComicsController extends Controller
 
         return redirect()->route('comics.index')->with('delete', 'Il Comic' . $comic->title . ' è stato eliminato correttamente');
     }
+
+    // public function index() {
+
+    //     $count_project = Project::count();
+    //     $last_project = Project::orderBy('id', 'desc')->first();
+    //     return view('admin.home', compact('count_project', 'last_project'));
+    //    }
 }

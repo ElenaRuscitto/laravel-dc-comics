@@ -13,11 +13,58 @@
                 {{ session('delete') }}
               </div>
             @endif
-            @foreach ($comics as $comic)
-
-
             <div class="col">
-                <div class="card my-5" style="width: 18rem;">
+
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+
+                            <th scope="col">Titolo</th>
+                            <th scope="col">Serie</th>
+                            <th scope="col">Prezzo</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="ms-4">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($comics as $comic)
+                            <tr>
+
+                                <td>{{$comic->title}}</td>
+                                <td>{{$comic->series}}</td>
+                                <td>{{$comic->price}}</td>
+                                <td>{{$comic->type}}</td>
+                                <td>
+                                    <div class="card-body d-flex  ">
+                                        <a href="{{route('comics.show', $comic)}}" class="btn">
+                                        <i class="fa-solid fa-eye text-success"></i>
+                                    </a>
+
+                                    <a href="{{route('comics.edit', $comic)}}" class="btn">
+                                        <i class="fa-solid fa-pencil text-warning"></i>
+                                        </a>
+
+                                        @include('partials.formDelete')
+
+
+                                    </div>
+                                </td>
+                            </tr>
+                         @endforeach
+
+                    </tbody>
+                  </table>
+
+
+
+
+
+
+
+
+                {{-- <div class="card my-5" style="width: 18rem;">
                     <img src="{{$comic->thumb}}" class="card-img-top" alt="{{$comic->title}}">
                     <div class="card-body">
                       <h5 class="card-title">{{$comic->title}}</h5>
@@ -43,9 +90,8 @@
                   </div>
 
 
-            </div>
 
-            @endforeach
+                </div> --}}
 
 
         </div>
