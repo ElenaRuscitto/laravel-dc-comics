@@ -10,7 +10,11 @@ class PageController extends Controller
 {
     public function index(){
 
-        return view('home');
+        $count_comic = Comic::count();
+        $last_comic = Comic::orderBy('id', 'desc')->first();
+
+    return view('home', compact('count_comic', 'last_comic'));
+
     }
 
     public function nuovaPagina(){
